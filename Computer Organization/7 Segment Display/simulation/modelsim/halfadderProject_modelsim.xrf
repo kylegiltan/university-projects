@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tanky/Desktop/lab_four/halfadderProject.bdf
+source_file = 1, C:/Users/tanky/Desktop/lab_four/db/halfadderProject.cbx.xml
+design_name = halfadderProject
+instance = comp, \s~output , s~output, halfadderProject, 1
+instance = comp, \c~output , c~output, halfadderProject, 1
+instance = comp, \x~input , x~input, halfadderProject, 1
+instance = comp, \y~input , y~input, halfadderProject, 1
