@@ -1,0 +1,156 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
+
+// DATE "10/01/2018 18:57:07"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module halfadderProject (
+	s,
+	x,
+	y,
+	c);
+output 	s;
+input 	x;
+input 	y;
+output 	c;
+
+// Design Ports Information
+// s	=>  Location: PIN_11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// c	=>  Location: PIN_10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// x	=>  Location: PIN_28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// y	=>  Location: PIN_7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("halfadderProject_v.sdo");
+// synopsys translate_on
+
+wire \s~output_o ;
+wire \c~output_o ;
+wire \x~input_o ;
+wire \y~input_o ;
+wire \inst~combout ;
+wire \inst2~combout ;
+
+
+// Location: IOOBUF_X0_Y18_N23
+cycloneive_io_obuf \s~output (
+	.i(\inst~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\s~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \s~output .bus_hold = "false";
+defparam \s~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y18_N16
+cycloneive_io_obuf \c~output (
+	.i(\inst2~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\c~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \c~output .bus_hold = "false";
+defparam \c~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y9_N8
+cycloneive_io_ibuf \x~input (
+	.i(x),
+	.ibar(gnd),
+	.o(\x~input_o ));
+// synopsys translate_off
+defparam \x~input .bus_hold = "false";
+defparam \x~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y21_N8
+cycloneive_io_ibuf \y~input (
+	.i(y),
+	.ibar(gnd),
+	.o(\y~input_o ));
+// synopsys translate_off
+defparam \y~input .bus_hold = "false";
+defparam \y~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N16
+cycloneive_lcell_comb inst(
+// Equation(s):
+// \inst~combout  = \x~input_o  $ (\y~input_o )
+
+	.dataa(\x~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\y~input_o ),
+	.cin(gnd),
+	.combout(\inst~combout ),
+	.cout());
+// synopsys translate_off
+defparam inst.lut_mask = 16'h55AA;
+defparam inst.sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N18
+cycloneive_lcell_comb inst2(
+// Equation(s):
+// \inst2~combout  = (\x~input_o  & \y~input_o )
+
+	.dataa(\x~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\y~input_o ),
+	.cin(gnd),
+	.combout(\inst2~combout ),
+	.cout());
+// synopsys translate_off
+defparam inst2.lut_mask = 16'hAA00;
+defparam inst2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign s = \s~output_o ;
+
+assign c = \c~output_o ;
+
+endmodule

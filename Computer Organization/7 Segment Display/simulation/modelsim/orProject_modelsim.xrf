@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tanky/Desktop/lab_four/orProject.bdf
+source_file = 1, C:/Users/tanky/Desktop/lab_four/db/orProject.cbx.xml
+design_name = orProject
+instance = comp, \y0~output , y0~output, orProject, 1
+instance = comp, \y1~output , y1~output, orProject, 1
+instance = comp, \y2~output , y2~output, orProject, 1
+instance = comp, \y3~output , y3~output, orProject, 1
+instance = comp, \a0~input , a0~input, orProject, 1
+instance = comp, \b0~input , b0~input, orProject, 1
+instance = comp, \b1~input , b1~input, orProject, 1
+instance = comp, \a1~input , a1~input, orProject, 1
+instance = comp, \b2~input , b2~input, orProject, 1
+instance = comp, \a2~input , a2~input, orProject, 1
+instance = comp, \b3~input , b3~input, orProject, 1
+instance = comp, \a3~input , a3~input, orProject, 1

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tanky/Desktop/lab_five/dlatch_.bdf
+source_file = 1, C:/Users/tanky/Desktop/lab_five/db/dlatch_.cbx.xml
+design_name = dlatch_
+instance = comp, \Q~output , Q~output, dlatch_, 1
+instance = comp, \Qbar~output , Qbar~output, dlatch_, 1
+instance = comp, \enable~input , enable~input, dlatch_, 1
+instance = comp, \R~input , R~input, dlatch_, 1
+instance = comp, \S~input , S~input, dlatch_, 1

@@ -1,0 +1,1806 @@
+|final
+output1 <= eightbitadder:inst.s0
+a1 => inst4.IN0
+a1 => inst13.IN0
+a1 => inst32.IN0
+a1 => inst36.IN1
+a1 => inst46.IN1
+a1 => inst55.IN1
+a1 => inst63.IN1
+a1 => inst73.IN1
+b0 => inst4.IN1
+b0 => inst2.IN1
+b0 => inst1.IN1
+b0 => inst3.IN1
+b0 => inst7.IN1
+b0 => inst6.IN1
+b0 => inst8.IN1
+b0 => inst5.IN1
+a0 => inst14.IN0
+a0 => inst5.IN0
+a0 => inst37.IN0
+a0 => inst33.IN1
+a0 => inst45.IN1
+a0 => inst54.IN1
+a0 => inst62.IN1
+a0 => inst72.IN1
+b1 => inst14.IN1
+b1 => inst13.IN1
+b1 => inst11.IN1
+b1 => inst10.IN1
+b1 => inst12.IN1
+b1 => inst16.IN1
+b1 => inst15.IN1
+b1 => inst17.IN1
+a2 => inst2.IN0
+a2 => inst11.IN0
+a2 => inst30.IN1
+a2 => inst38.IN1
+a2 => inst47.IN1
+a2 => inst56.IN1
+a2 => inst64.IN1
+a2 => inst74.IN1
+a3 => inst1.IN0
+a3 => inst10.IN0
+a3 => inst35.IN0
+a3 => inst39.IN1
+a3 => inst48.IN1
+a3 => inst57.IN1
+a3 => inst65.IN1
+a3 => inst75.IN1
+a4 => inst3.IN0
+a4 => inst12.IN0
+a4 => inst29.IN0
+a4 => inst40.IN1
+a4 => inst49.IN1
+a4 => inst58.IN1
+a4 => inst66.IN1
+a4 => inst76.IN1
+a5 => inst7.IN0
+a5 => inst16.IN0
+a5 => inst34.IN0
+a5 => inst41.IN1
+a5 => inst50.IN1
+a5 => inst59.IN1
+a5 => inst67.IN1
+a5 => inst77.IN1
+a6 => inst6.IN0
+a6 => inst15.IN0
+a6 => inst31.IN0
+a6 => inst42.IN1
+a6 => inst51.IN1
+a6 => inst60.IN1
+a6 => inst68.IN1
+a6 => inst78.IN1
+a7 => inst8.IN0
+a7 => inst17.IN0
+a7 => inst27.IN0
+a7 => inst43.IN1
+a7 => inst52.IN1
+a7 => inst61.IN1
+a7 => inst69.IN1
+a7 => inst79.IN1
+output0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+output3 <= eightbitadder:inst19.s0
+b2 => inst37.IN1
+b2 => inst32.IN1
+b2 => inst30.IN0
+b2 => inst35.IN1
+b2 => inst29.IN1
+b2 => inst34.IN1
+b2 => inst31.IN1
+b2 => inst27.IN1
+output4 <= eightbitadder:inst25.s0
+b3 => inst33.IN0
+b3 => inst36.IN0
+b3 => inst38.IN0
+b3 => inst39.IN0
+b3 => inst40.IN0
+b3 => inst41.IN0
+b3 => inst42.IN0
+b3 => inst43.IN0
+output5 <= eightbitadder:inst28.s0
+b4 => inst45.IN0
+b4 => inst46.IN0
+b4 => inst47.IN0
+b4 => inst48.IN0
+b4 => inst49.IN0
+b4 => inst50.IN0
+b4 => inst51.IN0
+b4 => inst52.IN0
+output6 <= eightbitadder:inst53.s0
+b5 => inst54.IN0
+b5 => inst55.IN0
+b5 => inst56.IN0
+b5 => inst57.IN0
+b5 => inst58.IN0
+b5 => inst59.IN0
+b5 => inst60.IN0
+b5 => inst61.IN0
+output7 <= eightbitadder:inst70.s0
+b6 => inst62.IN0
+b6 => inst63.IN0
+b6 => inst64.IN0
+b6 => inst65.IN0
+b6 => inst66.IN0
+b6 => inst67.IN0
+b6 => inst68.IN0
+b6 => inst69.IN0
+output8 <= eightbitadder:inst71.s0
+b7 => inst72.IN0
+b7 => inst73.IN0
+b7 => inst74.IN0
+b7 => inst75.IN0
+b7 => inst76.IN0
+b7 => inst77.IN0
+b7 => inst78.IN0
+b7 => inst79.IN0
+output9 <= eightbitadder:inst71.s1
+output10 <= eightbitadder:inst71.s2
+output11 <= eightbitadder:inst71.s3
+output12 <= eightbitadder:inst71.s4
+output13 <= eightbitadder:inst71.s5
+output14 <= eightbitadder:inst71.s6
+output15 <= eightbitadder:inst71.s7
+output16 <= eightbitadder:inst71.cout
+
+
+|final|eightbitadder:inst
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst19|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst19|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst25|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst25|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst28|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst28|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst53|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst53|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst70|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst70|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71
+s0 <= fulladder:inst8.s
+cin => fulladder:inst8.x
+a0 => fulladder:inst8.y
+b0 => fulladder:inst8.z
+s1 <= fulladder:inst9.s
+a1 => fulladder:inst9.y
+b1 => fulladder:inst9.z
+s2 <= fulladder:inst10.s
+a2 => fulladder:inst10.y
+b2 => fulladder:inst10.z
+s3 <= fulladder:inst11.s
+a3 => fulladder:inst11.y
+b3 => fulladder:inst11.z
+s4 <= fulladder:inst12.s
+a4 => fulladder:inst12.y
+b4 => fulladder:inst12.z
+s5 <= fulladder:inst13.s
+a5 => fulladder:inst13.y
+b5 => fulladder:inst13.z
+s6 <= fulladder:inst14.s
+a6 => fulladder:inst14.y
+b6 => fulladder:inst14.z
+s7 <= fulladder:inst15.s
+a7 => fulladder:inst15.y
+b7 => fulladder:inst15.z
+cout <= fulladder:inst15.c
+
+
+|final|eightbitadder:inst71|fulladder:inst8
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst8|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst8|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst9
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst9|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst9|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst10
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst10|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst10|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst11
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst11|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst11|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst12
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst12|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst12|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst13
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst13|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst13|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst14
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst14|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst14|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst15
+s <= halfadder:inst4.s
+x => halfadder:inst3.x
+y => halfadder:inst3.y
+z => halfadder:inst4.y
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst15|halfadder:inst4
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|eightbitadder:inst71|fulladder:inst15|halfadder:inst3
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+c <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

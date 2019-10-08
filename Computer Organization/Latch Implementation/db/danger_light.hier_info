@@ -1,0 +1,12 @@
+|danger_light
+x <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst17.CLK
+clock => inst18.CLK
+input => inst12.IN0
+input => inst14.IN0
+input => inst13.IN0
+input => inst11.IN0
+y <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+z <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
