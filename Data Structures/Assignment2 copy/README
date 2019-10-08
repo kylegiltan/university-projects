@@ -1,0 +1,5 @@
+To compile: javac *.java
+To run the evaluator for arithmetic expression: java Evaluate < expr.txt
+To test your own evaluator for boolean expression: java EvaluateBoolExpr < boolexpr.txt
+
+You are free to edit the boolexpr.txt. 
