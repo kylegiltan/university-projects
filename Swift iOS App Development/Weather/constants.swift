@@ -8,4 +8,4 @@
 
 import Foundation
 let urlBase = "https://api.darksky.net/forecast/"
-let urlAPIKey = "55b302e77489679003a3e2cabe19fa72/"
+let urlAPIKey = "" //API KEY REMOVED 
