@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uil-5s-1Ep">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="ZgU-YR-lxk">
+            <objects>
+                <viewController id="Uil-5s-1Ep" customClass="SplashScreenViewController" customModule="JeopardyTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyX-bJ-Hxe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jeopardy_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kL0-EC-xlW">
+                                <rect key="frame" x="0.0" y="104" width="320" height="202"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZmT-z4-pjJ" appends="YES" id="0a9-Qh-ZhE"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cUd-ej-w1H"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="kL0-EC-xlW" id="boH-qc-dfP"/>
+                        <segue destination="25v-g2-Dvg" kind="show" identifier="ShowCategories" id="Cs4-Lm-avc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFX-qz-QcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZmT-z4-pjJ">
+                    <connections>
+                        <action selector="logoTapped:" destination="Uil-5s-1Ep" id="jrZ-UL-V6G"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1164.375" y="17.95774647887324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JeopardyTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="GIs-Yh-UBP">
+                                <rect key="frame" x="119" y="80" width="82" height="295"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdg-ke-F6K">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="70"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="BYZ-67-bOa"/>
+                                            <constraint firstAttribute="height" constant="70" id="WQ6-xN-VR2"/>
+                                            <constraint firstAttribute="width" constant="82" id="r9J-rE-b4N"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="sER-v2-wrw"/>
+                                        </constraints>
+                                        <string key="text">Category
+0</string>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsO-B5-4UL">
+                                        <rect key="frame" x="0.0" y="79" width="82" height="36"/>
+                                        <color key="backgroundColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="$1">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="category0ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FH6-Uq-6sb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCY-Js-9It">
+                                        <rect key="frame" x="0.0" y="124" width="82" height="36"/>
+                                        <color key="backgroundColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="$2">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="category0ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yh-NX-fsE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtW-mI-vQg">
+                                        <rect key="frame" x="0.0" y="169" width="82" height="36"/>
+                                        <color key="backgroundColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="$3">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="category0ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xo5-HK-KNi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8V-1z-mNp">
+                                        <rect key="frame" x="0.0" y="214" width="82" height="36"/>
+                                        <color key="backgroundColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="$4">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="category0ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfH-R0-GTH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9b-Q8-Olk">
+                                        <rect key="frame" x="0.0" y="259" width="82" height="36"/>
+                                        <color key="backgroundColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="$5">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="category0ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaz-XU-8sN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pWB-Wg-vnP">
+                                <rect key="frame" x="16" y="490.5" width="245" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Questions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnM-p0-XY0">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Guessed Correctly:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viF-90-YK5">
+                                        <rect key="frame" x="0.0" y="20.5" width="245" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yko-RN-9vS">
+                                        <rect key="frame" x="0.0" y="41" width="53" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-m6-9Ue">
+                                <rect key="frame" x="281" y="490.5" width="23" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3X-sb-nfe">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5O-Oi-y8Q">
+                                        <rect key="frame" x="0.0" y="20.5" width="23" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS4-k6-eYD">
+                                        <rect key="frame" x="0.0" y="41" width="23" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.20411634449999999" green="0.47271108630000003" blue="0.96475440260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GIs-Yh-UBP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Gi-JI-SRa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zat-m6-9Ue" secondAttribute="trailing" constant="16" id="Qbf-YZ-BUG"/>
+                            <constraint firstItem="pWB-Wg-vnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qou-tv-N02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zat-m6-9Ue" secondAttribute="bottom" constant="16" id="Z9y-OC-dwh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pWB-Wg-vnP" secondAttribute="bottom" constant="16" id="tDK-9l-sCd"/>
+                            <constraint firstItem="GIs-Yh-UBP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zMF-Ed-7Qh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M8n-Lb-uFN">
+                        <barButtonItem key="leftBarButtonItem" title="Load New Categories" id="N0d-Oi-ugL">
+                            <connections>
+                                <action selector="loadButtonPressed:" destination="BYZ-38-t0r" id="1XD-tJ-y8I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answeredCorrectlyLabel" destination="q5O-Oi-y8Q" id="a5k-Ub-yA8"/>
+                        <outlet property="category0Label" destination="Fdg-ke-F6K" id="zeY-0k-mhn"/>
+                        <outlet property="scoreLabel" destination="nS4-k6-eYD" id="7AY-dg-VZX"/>
+                        <outlet property="totalQuestionsLabel" destination="h3X-sb-nfe" id="ZWU-KP-ZS0"/>
+                        <outletCollection property="category0Buttons" destination="qsO-B5-4UL" collectionClass="NSMutableArray" id="GKa-ZV-m77"/>
+                        <outletCollection property="category0Buttons" destination="DCY-Js-9It" collectionClass="NSMutableArray" id="jHx-MR-xxx"/>
+                        <outletCollection property="category0Buttons" destination="qtW-mI-vQg" collectionClass="NSMutableArray" id="Bd9-3H-dxB"/>
+                        <outletCollection property="category0Buttons" destination="C8V-1z-mNp" collectionClass="NSMutableArray" id="XAj-wl-0GY"/>
+                        <outletCollection property="category0Buttons" destination="K9b-Q8-Olk" collectionClass="NSMutableArray" id="Hs7-Zz-uIb"/>
+                        <segue destination="NbK-76-j6q" kind="presentation" identifier="PresentQuestion" id="hyc-oB-pqk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="18.75"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="gku-dN-Zlf">
+            <objects>
+                <viewController id="NbK-76-j6q" customClass="QuestionsViewController" customModule="JeopardyTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rwt-aH-5aK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je5-f8-8rg">
+                                <rect key="frame" x="16" y="36" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Goes Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-09-8oF">
+                                <rect key="frame" x="8" y="65" width="304" height="24"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7l-KX-ic0">
+                                <rect key="frame" x="98" y="269" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CJl-N7-BfB"/>
+                                    <constraint firstAttribute="width" constant="124" id="Yc1-mB-rN9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnswerButtonPressed:" destination="NbK-76-j6q" eventType="touchUpInside" id="bdX-XC-PFv"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Goes Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9q-of-GUM">
+                                <rect key="frame" x="16" y="307" width="288" height="24"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did You Get It Right?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-tQ-sO7">
+                                <rect key="frame" x="16" y="488" width="288" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOk-da-AzI">
+                                <rect key="frame" x="16" y="516" width="60" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4zn-aq-asi"/>
+                                    <constraint firstAttribute="width" constant="60" id="aM1-uG-7pH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noButtonPressed:" destination="NbK-76-j6q" eventType="touchUpInside" id="3gW-ej-J3B"/>
+                                    <segue destination="ccV-vn-pJ1" kind="unwind" unwindAction="segueAfterNoPressedWithSegue:" id="UFp-DN-Zeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43y-UT-CuP">
+                                <rect key="frame" x="244" y="516" width="60" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jgZ-P4-smr"/>
+                                    <constraint firstAttribute="width" constant="60" id="oRt-mj-SWD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButtonPressed:" destination="NbK-76-j6q" eventType="touchUpInside" id="TJu-qj-OQv"/>
+                                    <segue destination="ccV-vn-pJ1" kind="unwind" unwindAction="segueAfterYesPressedWithSegue:" id="3DE-2d-gj6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T7l-KX-ic0" firstAttribute="centerX" secondItem="rwt-aH-5aK" secondAttribute="centerX" id="0Of-xB-Jfa"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="bottom" secondItem="FUM-tQ-sO7" secondAttribute="bottom" constant="60" id="3Mw-n8-Dys"/>
+                            <constraint firstItem="FUM-tQ-sO7" firstAttribute="leading" secondItem="Rf4-tq-1Ym" secondAttribute="leading" constant="16" id="4aA-2a-dM2"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="trailing" secondItem="OSa-09-8oF" secondAttribute="trailing" constant="8" id="8cw-kq-xZm"/>
+                            <constraint firstItem="Je5-f8-8rg" firstAttribute="top" secondItem="Rf4-tq-1Ym" secondAttribute="top" constant="16" id="B1m-Aq-mnD"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="trailing" secondItem="FUM-tQ-sO7" secondAttribute="trailing" constant="16" id="GpA-QB-xwl"/>
+                            <constraint firstItem="aOk-da-AzI" firstAttribute="leading" secondItem="Rf4-tq-1Ym" secondAttribute="leading" constant="16" id="Jnm-fy-2JR"/>
+                            <constraint firstItem="T7l-KX-ic0" firstAttribute="centerY" secondItem="rwt-aH-5aK" secondAttribute="centerY" id="PQk-hQ-e05"/>
+                            <constraint firstItem="OSa-09-8oF" firstAttribute="top" secondItem="Je5-f8-8rg" secondAttribute="bottom" constant="8" id="QBM-Of-G7K"/>
+                            <constraint firstItem="Je5-f8-8rg" firstAttribute="leading" secondItem="Rf4-tq-1Ym" secondAttribute="leading" constant="16" id="Quc-kf-KEt"/>
+                            <constraint firstItem="D9q-of-GUM" firstAttribute="leading" secondItem="Rf4-tq-1Ym" secondAttribute="leading" constant="16" id="Riq-5A-wQx"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="trailing" secondItem="D9q-of-GUM" secondAttribute="trailing" constant="16" id="TTf-KG-Jes"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="trailing" secondItem="Je5-f8-8rg" secondAttribute="trailing" constant="16" id="fjw-3O-nY8"/>
+                            <constraint firstItem="D9q-of-GUM" firstAttribute="top" secondItem="T7l-KX-ic0" secondAttribute="bottom" constant="8" id="iQR-4D-bVP"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="trailing" secondItem="43y-UT-CuP" secondAttribute="trailing" constant="16" id="jUs-nD-jLc"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="bottom" secondItem="aOk-da-AzI" secondAttribute="bottom" constant="16" id="jyv-Sg-Wnx"/>
+                            <constraint firstItem="Rf4-tq-1Ym" firstAttribute="bottom" secondItem="43y-UT-CuP" secondAttribute="bottom" constant="16" id="sPV-0W-Kq5"/>
+                            <constraint firstItem="OSa-09-8oF" firstAttribute="leading" secondItem="Rf4-tq-1Ym" secondAttribute="leading" constant="8" id="vxp-kN-GMU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rf4-tq-1Ym"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="D9q-of-GUM" id="JpZ-hj-wbx"/>
+                        <outlet property="categoryLabel" destination="Je5-f8-8rg" id="aXX-Ai-YJd"/>
+                        <outlet property="getItRightLabel" destination="FUM-tQ-sO7" id="WHG-T4-qFA"/>
+                        <outlet property="noButton" destination="aOk-da-AzI" id="c5s-Xe-WaZ"/>
+                        <outlet property="questionLabel" destination="OSa-09-8oF" id="cdh-TU-zzL"/>
+                        <outlet property="showAnswerButton" destination="T7l-KX-ic0" id="qOy-hw-uxp"/>
+                        <outlet property="yesButton" destination="43y-UT-CuP" id="5UT-Uj-VFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0a-FN-K6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ccV-vn-pJ1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2080" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gdc-Mo-YRz">
+            <objects>
+                <navigationController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="25v-g2-Dvg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EmZ-h9-Auc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KlI-QC-MOn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzb-NK-81f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="-655.58035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jeopardy_logo" width="768" height="432"/>
+    </resources>
+</document>
