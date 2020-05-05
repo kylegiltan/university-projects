@@ -1,0 +1,21 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/fontawesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/milligram.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/delta/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'staticfiles/admin/css/login.css' %}">
+  <h2>Instructor Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+    <br></br>
+    <a href="{% url 'password_reset' %}">Forgot password?</a>
+  </form>
+{% endblock %}
