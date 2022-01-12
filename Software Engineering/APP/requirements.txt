@@ -13,7 +13,7 @@ importlib-resources==1.4.0
 matplotlib==2.1.2
 numpy==1.14.0
 pathlib2==2.3.5
-pipenv==2018.11.26
+pipenv==2022.1.8
 pyparsing==2.2.0
 python-dateutil==2.6.1
 pytz==2017.3
